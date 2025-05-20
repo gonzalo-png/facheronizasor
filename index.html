@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facheronizasor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="facha.css" />
+</head>
+<body>
+<div id="p5-background-container"></div>
+<header>
+  <div class="header-container">
+
+<div class="calavera-container" id="calavera-left">
+  <img src="MATERIAL_TP/calaveras/calavera_dark_sisi.gif" alt="Calavera Izquierda" class="calavera" />
+  <div id="p5-container-left" class="p5-container"></div>
+</div>
+
+    
+    <div class="header-center">
+      <img src="MATERIAL_TP/logo/marca.png" alt="Logotipo" class="header-img logotipo" />
+      <img src="MATERIAL_TP/logo/logo.png" alt="Isologotipo" class="header-imgpebete isologotipo" />
+    </div>
+
+    
+<div class="calavera-container" id="calavera-right">
+  <img src="MATERIAL_TP/calaveras/calavera_files_sisi.gif" alt="Calavera Derecha" class="calavera" />
+  <div id="p5-container-right" class="p5-container"></div>
+</div>
+
+  </div>
+</header>
+<main>
+  <section id="descripcion-radar">
+  <p>
+    <strong>Radar de Facheros:</strong><br />
+    Este radar no busca submarinos ni ovnis, sino auténticos facheros que andan sueltos por la ciudad. Con tecnología de última generación para detectar niveles de estilo peligrosamente altos, ¡ningún look pasa desapercibido! Si te sentís un ícono de la moda o simplemente querés saber quién anda más facherito cerca, este radar es tu mejor aliado. Prepárate para ser cazado por el flow. 
+  </p>
+</section>
+<section id="radar-section" >
+  <div id="radar-container" ></div>
+  <div id="radar-text" >
+    <h2>Radar de Facheros</h2>
+    <p id="message">🔍 Escaneando la zona...</p>
+  </div>
+</section>
+</main>
+
+<footer>
+<section id="perfil-section">
+  <div id="perfil-contenido">
+    <div id="gif-container">
+      <img
+        id="gif"
+        src="MATERIAL_TP/yop/YOP.png"
+        alt="Haz clic para reproducir"
+        onclick="reproducirGif()"
+      />
+    </div>
+    <div id="perfil-datos">
+      <h2>Nombre: Gonzalo Ezequiel Reinoso</h2>
+      <h3>Materia: Diseño y Programación Web I</h3>
+      <p>Trabajo Practino Nº1</p>
+    </div>
+  </div>
+</section>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.min.js"></script>
+<script src="fondo-olas.js"></script>
+<script src="radar.js"></script>
+<script>
+  function reproducirGif() {
+    const container = document.getElementById('gif-container');
+    container.innerHTML = `<img src="MATERIAL_TP/yop/YOP.gif" style="width: 300px;" />`;
+  }
+</script>
+<script src="ojos.js"></script>
+</body>
+</html>
